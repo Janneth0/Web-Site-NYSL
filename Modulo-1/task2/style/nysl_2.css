@@ -1,0 +1,72 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    font-family: "comic sans", "comic sans ms", cursive;
+}
+h1{
+    position: absolute;
+    display: block;
+    top: 0%;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+header{
+    background-image: url("../img/design2_image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border: 1px black solid;
+    margin-top:8vh;
+    width: 100%;
+}
+h2{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    padding: 8px ;
+    margin: 40vh 0% 0% 0%;
+
+  }
+#logo{
+    position: absolute;
+    top:60vh;
+    left: 5vh;
+    width: 150px;
+    border-radius: 75px;
+    border: 2px black solid;
+}
+nav{
+    position: absolute;
+    right: 10vh;
+    top: 4vh;
+}
+nav a{
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    background-color: blue;
+  
+    text-decoration: none;
+    margin: 5px;
+    border: black solid 2px;
+    box-shadow: 4px 3px black;
+  }
+.select{
+    background-color: green;
+}
+#container{
+    display: block;
+      width: 60%;
+      margin-left: 25%;
+      padding: 15px;     
+}
+#container>p,h3{
+    margin: 0;
+}
+#container>p{
+    padding: 0px 0px 30px 15px;
+}
+#style3,#style1{
+    display: none;
+}
+
