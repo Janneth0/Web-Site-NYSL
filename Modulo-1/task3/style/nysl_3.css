@@ -7,7 +7,6 @@ body{
 *{
     margin: 0;
 }
-  
 header>h1{
     display: block;
     margin-top: 0px;
@@ -58,7 +57,6 @@ nav a{
 nav>.select, nav>a:hover{
     background-color:#1c26b9;
     color: blanchedalmond;
-    border-bottom:#1c26b9 solid 2px;
     transition: 1s;
     transform: translateY(-10px); 
 }
@@ -119,8 +117,73 @@ footer{
     text-align: center;
     background-color:#1c26b9;
     padding: 10px;
-}
+    bottom: 0px;
+} 
+
 footer>a{
     margin: 0px 30px;
     color: #93E317;
 }
+/*-------List-------*/
+dt{
+    display: block;
+    font-size: 1.17em;
+    margin: 15px 0px 0px 5px;
+
+    font-weight: bold;
+}
+ul{
+    list-style-type: square;
+}
+.item{
+    list-style-type: none;
+}
+.items{
+    list-style-type: circle;
+}
+.st{
+    padding-bottom: 10px;
+}
+
+
+/*-----------table-----------------*/
+table {
+    border-collapse: collapse;
+    caption-side: bottom;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+td,th {
+  border: 1px solid black;
+  padding: 10px;
+  width: 25%;
+}
+
+tbody > tr:nth-child(even), .bg-w {
+    background-color: #c7c3c3;
+  }
+tbody > tr:nth-child(odd) {
+    background-color: #919191;
+    }
+.locations tr:hover{
+    background-color: #2832c0e8;
+    color: aliceblue;
+}
+th{
+    background-color: #1c26b9;
+    color: azure;
+}
+
+#contact{
+    padding-top: 15px;
+}
+
+#container>#contact>p{
+    margin: 0 20% 15px 15px;
+    float: left;
+}
+
+
+  
