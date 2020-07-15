@@ -161,26 +161,13 @@ td,th {
   padding: 10px;
   width: 25%;
 }
-.bg-w {
-    background-color: #c7c3c3;
-  }
-tbody > tr:nth-child(even), tbody >.bg-w {
-    background-color: #c7c3c3;
-  }
- 
-
-tbody > tr:nth-child(odd) {
-    background-color: #919191;
-    }
-.locations tr:hover{
-    background-color: #2832c0e8;
+tbody tr:hover {
+    background-color: #fd7d14a9;
     color: aliceblue;
 }
 th{
     background-color: #1c26b9;
     color: azure;
-}
-
 #contact{
     padding-top: 15px;
 }
@@ -190,5 +177,12 @@ th{
     float: left;
 }
 
-
+  /* tbody > tr:nth-child(even) {
+    background-color: #c7c3c3;
+  }
+  
+  tbody > tr:nth-child(odd) {
+    background-color: #919191;
+  } */
+  
   
