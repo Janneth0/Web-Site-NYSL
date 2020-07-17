@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYSL-Contact</title>
+    <title>NYSL-Registration</title>
    
     <link rel="stylesheet" href="style/nysl_3.css">
   </head>
@@ -17,11 +17,11 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About<span id="style1"> NYSL</span></a>
-      <a href="contact.html" class="select">Contact</a>
+      <a href="contact.html">Contact</a>
       <a href="rules.html" >Rule</a>
       <a href="game_info.html" >Game Info</a>
       <a href="gallery.html" id="style3">Gallery</a>
-      <a href="#">registration</a>
+      <a href="#" class="select">registration</a>
     </nav>
     <main>
       <div id="container">
@@ -29,26 +29,26 @@
             <fieldset class="boxset">
               <legend>Personal Information</legend>
               <label>Player's First Name:
-                <input type="text" name="Name" placeholder="full name" class="n-input">
+                <input type="text" name="Name" placeholder="full name">
               </label>
               <label>
                 Last Name: 
-                <input type="text" name="Surname" class="n-input">
+                <input type="text" name="Surname" >
               </label><br>
               <label>
                 Street Address:
-                <input type="text" name="Street_Address"  class="n-input w-full">              </label><br>
+                <input type="text" name="Street_Address"  class="n-input">              </label><br>
               <label>
                 City:
-                <input type="text" name="City" class="n-input">
+                <input type="text" name="City" >
               </label>
               <label>
                 Zip Code:
-                <input type="text" name="Zip_Code" class="n-input" >
+                <input type="text" name="Zip_Code" >
               </label><br>
               <label>
                 Birth Date (mm/dd/yyyy):
-                <input type="date" name="Birth_Date" class="n-input">
+                <input type="date" name="Birth_Date">
               </label>
               <label>Gender:</label>
                 <label><input type="radio" name="Gender" value="Female" > Female</label>
@@ -57,24 +57,25 @@
             <br>
               <label>Grade:</label>
               <label>
-                <input type="checkbox" name="grade" value="pre-school"> Pre-School 
+                <input type="radio" name="grade" value="pre-school"> Pre-School 
               </label>
-              <label><input type="checkbox" name="grade" value="1st"> 1<sup>st</sup></label>
-              <label><input type="checkbox" name="grade" value="2nd"> 2<sup>nd</sup></label>
-              <label><input type="checkbox" name="grade" value="3rd"> 3<sup>rd</sup></label>
-              <label><input type="checkbox" name="grade" value="4th"> 4<sup>th</sup></label>
-              <label><input type="checkbox" name="grade" value="5th"> 5<sup>th</sup></label><br>
+              <label><input type="radio" name="grade" value="1st"> 1<sup>st</sup></label>
+              <label><input type="radio" name="grade" value="2nd"> 2<sup>nd</sup></label>
+              <label><input type="radio" name="grade" value="3rd"> 3<sup>rd</sup></label>
+              <label><input type="radio" name="grade" value="4th"> 4<sup>th</sup></label>
+              <label><input type="radio" name="grade" value="5th"> 5<sup>th</sup></label><br>
+              
               <label>
                 Parent/Guardian:
-                <input type="text" name="Parent-Guardian" class="n-input w-full">
+                <input type="text" name="Parent-Guardian" class="w-full">
               </label><br>
               <label>
                 Contact Phone:
-                <input type="number" name="Contact_Phone" class="n-input" >
+                <input type="number" name="Contact_Phone" >
               </label>
               <label>
                 Contact Email:
-                <input type="email" name="Contact_Email" class="n-input">
+                <input type="email" name="Contact_Email" >
               </label>          
             </fieldset> 
             <fieldset class="boxset">
@@ -147,10 +148,10 @@
                 <div class="col2">
                   <label><input type="checkbox" name="Jersey_Size" value="Medium">Medium</label><br>
                   <label><input type="checkbox" name="Jersey_Size" value="Large">Large</label><br>
-                  <label><input type="checkbox" name="Jersey_Size" value="Extra-Large">Extra-Large</label><br>
+                  <label><input type="checkbox" name="Jersey_Size" value="Extra-Large">Extra-Large</label>
                 </div>
               </fieldset>
-              <fieldset class="boxset">
+              <fieldset >
                 <legend>Shorts Size:</legend>
                 <div class="col1">
                   <label><input type="checkbox" name="Shorts_Size" value="Youth Small">Youth Small</label><br>

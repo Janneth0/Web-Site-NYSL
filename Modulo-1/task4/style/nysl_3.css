@@ -198,17 +198,11 @@ form fieldset{
     padding: 15px;
     margin: 15px;
 }
-.n-input{
-    margin:5px 20px 5px 0px;
-}
 input{
-    margin:5px 0px 5px 10px ;
+    margin:5px 20px 5px 0px;
 }
 .w-full{
     width: 70%;
-}
-label[name="Gender"]{
-    background-color:red;
 }
 .boxset>legend{
     background-color: white;
@@ -216,7 +210,10 @@ label[name="Gender"]{
     margin-top: 15px;
     padding: 5px;
 }
-.email{
-    size: 70;
+input[type=radio] {
+    border: 1px solid #fff;
+    margin:0px 0px 0px 10px;
+    padding: 5px;
+    -webkit-appearance: none;
+    border:1px solid violet ;
 }
-  
