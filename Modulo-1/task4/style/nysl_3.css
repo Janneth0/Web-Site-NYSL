@@ -50,7 +50,7 @@ nav a{
     font-size: 17px;
     text-transform: uppercase;
     border-radius: 8px 8px 0px 0px;
-    padding: 15px 37px 15px 37px;
+    padding: 15px 20px 15px 20px;
     color: black;
     border-bottom: black solid 2px;
 }
@@ -185,5 +185,38 @@ th{
     float: left;
 }
 
+/*----Formularios----*/
 
+fieldset{
+    background-color: white;
+}
+form fieldset{
+    background-color: transparent;
+}
+.boxset {
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+}
+.n-input{
+    margin:5px 20px 5px 0px;
+}
+input{
+    margin:5px 0px 5px 10px ;
+}
+.w-full{
+    width: 70%;
+}
+label[name="Gender"]{
+    background-color:red;
+}
+.boxset>legend{
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px;
+}
+.email{
+    size: 70;
+}
   
