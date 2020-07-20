@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYSL-Registration</title>
-   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="style/nysl_3.css">
   </head>
  
@@ -16,16 +16,16 @@
     </header>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About<span id="style1"> NYSL</span></a>
+      <a href="about.html">About NYSL</a>
       <a href="contact.html">Contact</a>
       <a href="rules.html" >Rule</a>
       <a href="game_info.html" >Game Info</a>
-      <a href="gallery.html" id="style3">Gallery</a>
+      <a href="gallery.html" >Gallery</a>
       <a href="#" class="select">registration</a>
     </nav>
     <main>
       <div id="container">
-          <form action = "show_data.html" method = "get">
+          <form action = "show_data.html" method = "get" id="form">
             <fieldset class="boxset">
               <legend>Personal Information</legend>
               <label>Player's First Name:
@@ -37,7 +37,7 @@
               </label><br>
               <label>
                 Street Address:
-                <input type="text" name="Street_Address"  class="n-input">              </label><br>
+                <input type="text" name="Street_Address"  class="w-full">              </label><br>
               <label>
                 City:
                 <input type="text" name="City" >
@@ -80,7 +80,7 @@
             </fieldset> 
             <fieldset class="boxset">
               <legend>Which elementary schools do you live near?</legend>
-              <fieldset>
+              <fieldset class="col">
                 <legend>First Closest School:</legend>
                 <div class="col1">
                   <label><input type="checkbox" name="First_Closest_School" value="AJ Katzenmaier">AJ Katzenmaier</label><br>
@@ -93,7 +93,7 @@
                   <label><input type="checkbox" name="First_Closest_School" value="South Elementary">South Elementary</label><br>
                 </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="col">
                 <legend>Second Closest School:</legend>
                 <div class="col1">
                   <label><input type="checkbox" name="Second_Closest_School" value="AJ Katzenmaier">AJ Katzenmaier</label><br>
@@ -137,7 +137,7 @@
                   <input type="checkbox" name="Already Have a Uniform" value="Already Have a Uniform"><strong>Already Have a Uniform</strong><br>
                 </label>
               </legend>
-              <fieldset>
+              <fieldset class="col">
                 <legend>Jersey Size:</legend>
                 <div class="col1">               
                   <label><input type="checkbox" name="Jersey_Size" value="Youth Small">Youth Small</label><br>
@@ -151,7 +151,7 @@
                   <label><input type="checkbox" name="Jersey_Size" value="Extra-Large">Extra-Large</label>
                 </div>
               </fieldset>
-              <fieldset >
+              <fieldset class="col">
                 <legend>Shorts Size:</legend>
                 <div class="col1">
                   <label><input type="checkbox" name="Shorts_Size" value="Youth Small">Youth Small</label><br>
@@ -178,7 +178,7 @@
               By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
               cancellation policy and agree to its terms.</p><br>
               <label>Parent/Guardian Signature: 
-                <input type="text" name="parent" size="39">
+                <input type="text" name="parent" >
               </label>
               <label>
                 Date:
@@ -191,6 +191,11 @@
           </form>
       </div>
     </main>
+    <footer>
+      <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </footer>
     
   </body>
 </html>

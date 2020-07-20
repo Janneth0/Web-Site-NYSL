@@ -190,16 +190,22 @@ th{
 fieldset{
     background-color: white;
 }
-form fieldset{
+form fieldset,.login_r{
     background-color: transparent;
+    
 }
-.boxset {
+.boxset  {
     background-color: white;
     padding: 15px;
     margin: 15px;
+
+    border-radius: 5px;
 }
 input{
     margin:5px 20px 5px 0px;
+}
+input[type=checkbox], input[type=radio]{
+    margin:5px 5px 5px 10px;
 }
 .w-full{
     width: 70%;
@@ -207,13 +213,27 @@ input{
 .boxset>legend{
     background-color: white;
     border-radius: 5px;
+    border: black solid 1px;
     margin-top: 15px;
+    margin-bottom: 0;
     padding: 5px;
 }
-input[type=radio] {
-    border: 1px solid #fff;
-    margin:0px 0px 0px 10px;
-    padding: 5px;
-    -webkit-appearance: none;
-    border:1px solid violet ;
+.col1, .col2, .col{
+    float: left;
+    padding-right: 5px;
+}
+.boxset>.col{
+    width: 47%;
+    margin: 0px;
+    border: none;
+}
+.login_r{
+    text-align: center;
+    border: none;
+}
+#container>#form{
+    padding: 20px;
+    background-image: url("../img/Sin título1.png");
+    background-image: url("../img/fotomurales-siluetas-jugadores-de-futbol-de-vectores.jpg.jpg");
+    border-radius: 5px;
 }
