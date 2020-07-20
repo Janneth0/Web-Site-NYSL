@@ -29,11 +29,11 @@
             <fieldset class="boxset">
               <legend>Personal Information</legend>
               <label>Player's First Name:
-                <input type="text" name="Name" placeholder="full name">
+                <input type="text" name="Name" placeholder="full name" required>
               </label>
               <label>
                 Last Name: 
-                <input type="text" name="Surname" >
+                <input type="text" name="Surname">
               </label><br>
               <label>
                 Street Address:
@@ -178,15 +178,16 @@
               By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
               cancellation policy and agree to its terms.</p><br>
               <label>Parent/Guardian Signature: 
-                <input type="text" name="parent" >
+                <input type="text" name="parent" required>
               </label>
               <label>
                 Date:
-                <input type="date" name="date">
+                <input type="date" name="date" required>
               </label>
             </fieldset>
             <fieldset class="login_r">
               <input class="btn" type="submit" name="submit" value="Login">
+              <!--input type="reset" value="Borrar información"-->
             </fieldset>
           </form>
       </div>

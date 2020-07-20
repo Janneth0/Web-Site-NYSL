@@ -119,7 +119,6 @@ footer{
     padding: 10px;
     bottom: 0px;
 } 
-
 footer>a{
     margin: 0px 30px;
     color: #93E317;
@@ -129,7 +128,6 @@ dt{
     display: block;
     font-size: 1.17em;
     margin: 15px 0px 0px 5px;
-
     font-weight: bold;
 }
 ul{
@@ -144,8 +142,6 @@ ul{
 .st{
     padding-bottom: 10px;
 }
-
-
 /*-----------table-----------------*/
 table {
     border-collapse: collapse;
@@ -153,7 +149,7 @@ table {
     text-align: center;
     width: 100%;
     margin-bottom: 15px;
-  }
+}
 
 td,th {
   border: 1px solid black;
@@ -186,19 +182,14 @@ th{
 }
 
 /*----Formularios----*/
-
-fieldset{
-    background-color: white;
-}
 form fieldset,.login_r{
     background-color: transparent;
-    
 }
 .boxset  {
     background-color: white;
     padding: 15px;
     margin: 15px;
-
+    border: #1c26b9 solid 2px;
     border-radius: 5px;
 }
 input{
@@ -211,16 +202,16 @@ input[type=checkbox], input[type=radio]{
     width: 70%;
 }
 .boxset>legend{
-    background-color: white;
+    background-color:#1c26b9 ;
+    color: white;
     border-radius: 5px;
-    border: black solid 1px;
     margin-top: 15px;
     margin-bottom: 0;
     padding: 5px;
 }
 .col1, .col2, .col{
     float: left;
-    padding-right: 5px;
+    padding-right: 3px;
 }
 .boxset>.col{
     width: 47%;
@@ -233,7 +224,16 @@ input[type=checkbox], input[type=radio]{
 }
 #container>#form{
     padding: 20px;
-    background-image: url("../img/Sin título1.png");
-    background-image: url("../img/fotomurales-siluetas-jugadores-de-futbol-de-vectores.jpg.jpg");
+    background-image: url("../img/back_form.jpg");
     border-radius: 5px;
+}
+.btn{
+    background-color:#1c26b9 ;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #93E317;
+    color: black;
 }
