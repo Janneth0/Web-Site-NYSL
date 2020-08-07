@@ -118,6 +118,12 @@ function position(matriz,indx){
 }
 
 position(array,index);
+console.log("-------------------------EJERCICIO 5-Visto en CLASES-------------------------");
+function buscarindx(array,index){
+	console.log(array[index-1]);
+}
+console.log(array);
+buscarindx(array,1);
 
 console.log("-------------------------EJERCICIO 5-Array Edades-------------------------");
 
@@ -139,7 +145,6 @@ console.log("-------------------------EJERCICIO 6-------------------------");
 //ejercicio6
 function getrepetido(arrays){
   var arrayaux=[];
-  var cont=1;
 	console.log("array: "+arrays);
   for(var i=0 ; i<arrays.length ; i++){
     var valor=arrays[i];
@@ -147,7 +152,6 @@ function getrepetido(arrays){
       if(valor==arrays[j]){
         arrayaux.push(valor);
         console.log(`El numero ${valor} se repite`);
-        cont++;
       }
     }
   }
@@ -184,30 +188,46 @@ console.log("Edades Repetidas: "+repetidos(edades));
 console.log("-------------------------EJERCICIO 7------------------------");
 //Ejercicio 7
 var myColor = ["Red", "Green", "White", "Black"];
-function color2(color){
+function color(color){
 	var colores="";
 	for(var i=0; i<color.length ; i++){
 		if(i!=color.length-1){
-			colores=colores+ `"${color[i]}",`;
+			colores += `"${color[i]}",`;
 		}else if(i==color.length-1){
-			colores=colores+ `"${color[i]}"`;
+			colores += `"${color[i]}"`;
 		}
 	}
 	console.log(colores);
 	return colores
 }
-color2(myColor);
+color(myColor);
+
 console.log("-------------------------EJERCICIO 7.1-------------------------");
 //ejercicio7 otra manera
 function color1(colors){
-	
-	console.log("colores: \"" + colors.join("\",\"") +"\"" );
 	console.log(colors);
+	console.log("colores: \"" + colors.join("\",\"") +"\"" );
+	
 	return colors;
 }
 color1(myColor);
-
-
+console.log("-------------------------EJERCICIO 7.2-Visto en Clase------------------------");
+function color2(array){
+	return array.toString();
+}
+console.log(color2(myColor));
+function arrayColor2(array){
+	var frase="";
+	for(var i=0;i<array.length;i++){
+		frase +='"';
+		frase += array[i];
+		frase +='"';
+		if(i<array.length-1){
+			frase +=',';
+		}
+	}return frase;
+}
+console.log(arrayColor2(myColor));
 //                         TERCERA ENTREGA
 
 //ejercicio 1                 
@@ -226,6 +246,7 @@ function invertir() {
 return nuevacadena;
 }
 console.log("cadena invertida: "+ invertir());
+
 console.log("-------------------------EJERCICIO 2-------------------------");
 //Ejercicio 2
 var cadena="webmaster";	
