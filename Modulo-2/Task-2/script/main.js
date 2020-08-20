@@ -2,7 +2,7 @@
 // document.getElementById("senate-data").innerHTML = JSON.stringify(data,null,2);
 
     let members=data.results[0].members;
-    console.log(members[0])
+    // console.log(members[0])
     let table =document.getElementById("senate")
     let tbody=document.createElement("tbody")
     for (let i = 0; i < members.length; i++) {
