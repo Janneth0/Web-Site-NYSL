@@ -1,9 +1,18 @@
- //console.log(data);
-// document.getElementById("senate-data").innerHTML = JSON.stringify(data,null,2);
+let members=data.results[0].members;
+verifyPage();
+//Verificacion de Pagina
+function verifyPage() {
+    if (document.getElementById("senate")) {
+        Paint_Table("senate");
+    } else {
+        Paint_Table("house");
+    }
+}
 
-    let members=data.results[0].members;
-    // console.log(members[0])
-    let table =document.getElementById("senate")
+//Agregar Tablas
+function Paint_Table(ide){
+    let table =document.getElementById(ide)
+    console.log(table);
     let tbody=document.createElement("tbody")
     for (let i = 0; i < members.length; i++) {
     // console.log(members[i].first_name);
@@ -33,4 +42,7 @@
     tbody.appendChild(tr)
     }
 table.appendChild(tbody)
+
+}
+
 console.log(members)
