@@ -10,7 +10,8 @@
     let tr = document.createElement('tr');
 
     let td1 = document.createElement('td');// Nombre completo
-        td1.innerText=members[i].first_name+' '+(members[i].middle_name||' ')+''+ members[i].last_name;
+      
+        td1.innerHTML= "<a class='iframe_colorbox' target='_blank' href=" + members[i].url + ">" + members[i].first_name+' '+(members[i].middle_name||' ')+''+ members[i].last_name + "</a>";
 
     let td2 = document.createElement('td');//partido
         td2.innerText=members[i].party;
