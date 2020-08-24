@@ -6,3 +6,24 @@ body {
     padding-left:0 ;
     padding-right: 0;
 }
+
+.btn-link {
+    color: black;
+}
+.img_tgif{
+   width: 100%;
+}
+#nav_head{
+    display: none;
+}
+#mail{
+    padding-right: 10%;
+    padding-top: 5%;
+    
+}
+@media screen and (max-width:300px) {
+    #nav_head{
+        display: block;
+    }
+   
+}
