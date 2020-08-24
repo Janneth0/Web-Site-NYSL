@@ -21,7 +21,7 @@ body {
     padding-top: 5%;
     
 }
-@media screen and (max-width:300px) {
+@media screen and (max-width:500px) {
     #nav_head{
         display: block;
     }
