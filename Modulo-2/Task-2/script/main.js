@@ -2,6 +2,19 @@ let members = data.results[0].members;
 document.querySelectorAll("input[name=party]").forEach(function (e) {
     e.addEventListener("change", verifyPage)
 })
+
+document.querySelector("#state-filter").addEventListener("change", verifyPage)
+
+//document.querySelector("#senate-select").addEventListener("change",verifyPage)
+//document.querySelector("#state-filter")addEventListener("change")
+//document.querySelector("#senate-select").addEventListener("change", function () {
+//  verifyPage()
+//})
+
+
+
+
+
 //Verificacion de Pagina
 function verifyPage() {
     if (document.getElementById("senate")) {
@@ -10,6 +23,22 @@ function verifyPage() {
         Paint_Table("house");
     }
 }
+verifyPage();
+let states = [];
+for (i = 0; i < members.length; i++) {
+    if (!states.includes(members[i].state) ) {
+        states.push(members[i].state)
+    }
+}
+states.sort();
+
+states.forEach(state => {
+    let option = document.createElement("option")
+    option.value = state
+    option.innerText = state
+    document.querySelector("#state-filter").appendChild(option)
+})
+
 
 //Agregar Tablas
 function Paint_Table(ide) {
@@ -40,8 +69,13 @@ function Paint_Table(ide) {
     let tbody = document.createElement("tbody")
     let checkedParty = Array.from(document.querySelectorAll("input[name=party]:checked")).map(e => e.value)
 
+    let state=document.querySelector("#state-filter").value;
+  
+
     for (let i = 0; i < members.length; i++) {
-        if (checkedParty.includes(members[i].party)) {
+        console.log(members[i].states );
+        if (checkedParty.includes(members[i].party) && (state == "ALL" || members[i].state == state)) {
+            console.log(members[i].state)
             let tr = document.createElement('tr');
 
             let td1 = document.createElement('td');// Nombre completo
@@ -75,8 +109,3 @@ function Paint_Table(ide) {
     table.appendChild(tbody)
 
 }
-
-
-
-
-verifyPage()
